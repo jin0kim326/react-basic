@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import AppProducts from './basic/AppProducts';
+import Button1 from './components/Button1';
+import Button2 from './components/Button2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppProducts />
+    <Button1 />
+    <Button2 />
   </React.StrictMode>
 );
 
