@@ -5,12 +5,12 @@ import reportWebVitals from './reportWebVitals';
 import AppProducts from './basic/AppProducts';
 import Button1 from './components/Button1';
 import Button2 from './components/Button2';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Button1 />
-    <Button2 />
+    <App />
   </React.StrictMode>
 );
 
