@@ -1,16 +1,20 @@
 import React from 'react';
-import Button1 from './components/Button1';
-import Button2 from './components/Button2';
-import StyledComponent from './components/StyledComponent';
-import Tailwind from './components/Tailwind';
+import MainProducts from './react-query/components/MainProducts';
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from '@tanstack/react-query';
+
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+
+const queryClient = new QueryClient();
 
 export default function App() {
   return (
-    <>
-      <Button1 />
-      <Button2 />
-      <StyledComponent />
-      <Tailwind />
-    </>
+    <QueryClientProvider client={queryClient}>
+      <MainProducts />
+      <ReactQueryDevtools initialIsOpen={true} />
+    </QueryClientProvider>
   );
 }
