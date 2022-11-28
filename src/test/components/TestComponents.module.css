@@ -1,0 +1,16 @@
+.ul {
+  width: 100vw;
+  white-space: no-wrap;
+}
+
+.ul > .li {
+  width: 80vw;
+  margin: 0 10vw 0 10vw;
+  display: inline-block;
+  position: relative;
+}
+
+.mainImg {
+  width: 500px;
+  height: 500px;
+}
